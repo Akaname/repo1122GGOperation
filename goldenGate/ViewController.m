@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UILabel *emailLabel;
 
 @end
 
@@ -17,7 +18,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	CGRect labelFrame = CGRectMake(0.0f, 0.0f, 100.0f, 100.0f);
+    self.emailLabel = [[UILabel alloc] initWithFrame:labelFrame];
+    //self.emailLabel.numberOfLines = 3;
+    //self.emailLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    self.emailLabel.text = @"insert email address";
+    self.emailLabel.font = [UIFont boldSystemFontOfSize:14.0f];
+    [self.emailLabel setTextColor:[UIColor orangeColor]];
+    self.emailLabel.center = self.view.center;
+    [self.view addSubview:self.emailLabel];
 }
 
 - (void)didReceiveMemoryWarning
