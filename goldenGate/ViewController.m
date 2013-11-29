@@ -10,7 +10,7 @@
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *emailLabel;
-
+@property (nonatomic, strong) UIButton *myButton;
 @end
 
 @implementation ViewController
@@ -27,12 +27,30 @@
     [self.emailLabel setTextColor:[UIColor orangeColor]];
     self.emailLabel.center = self.view.center;
     [self.view addSubview:self.emailLabel];
+    
+    // -------- Button -----------
+    self.myButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    self.myButton.frame = CGRectMake(110.0f, 200.0f, 100.0f, 44.0f);
+    [self.myButton setTitle:@"Press me" forState:UIControlStateNormal];
+    [self.myButton setTitle:@"I am pressed" forState:UIControlStateHighlighted];
+    [self.myButton addTarget:self action:@selector(buttonIsPressed:) forControlEvents:UIControlEventTouchDown];
+    [self.myButton addTarget:self action:@selector(buttonIsTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.myButton];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) buttonIsPressed:(UIButton *)paramSender{
+    NSLog(@"Button is pressed");
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert" message:self.emailLabel.text delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
+    [alertView show];
+}
+- (void) buttonIsTapped:(UIButton *)paramSender{
+    NSLog(@"Button is tapped");
 }
 
 @end
