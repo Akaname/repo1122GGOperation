@@ -32,6 +32,7 @@
 		A95F495918481DBE003A314C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95F495018481DBE003A314C /* StoreKit.framework */; };
 		A95F495A18481DBE003A314C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95F495118481DBE003A314C /* SystemConfiguration.framework */; };
 		BA9E4FA6184862E0001F378A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9E4FA5184862E0001F378A /* Parse.framework */; };
+		BA9E4FA818487D73001F378A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9E4FA718487D73001F378A /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		A95F495018481DBE003A314C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		A95F495118481DBE003A314C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BA9E4FA5184862E0001F378A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Downloads/Parse.framework; sourceTree = "<group>"; };
+		BA9E4FA718487D73001F378A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				BA9E4FA6184862E0001F378A /* Parse.framework in Frameworks */,
 				A95F4914184816F7003A314C /* UIKit.framework in Frameworks */,
 				A95F4910184816F7003A314C /* Foundation.framework in Frameworks */,
+				BA9E4FA818487D73001F378A /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +136,7 @@
 		A95F490E184816F7003A314C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA9E4FA718487D73001F378A /* FacebookSDK.framework */,
 				A95F494918481DBE003A314C /* AudioToolbox.framework */,
 				A95F494A18481DBE003A314C /* CFNetwork.framework */,
 				A95F494B18481DBE003A314C /* CoreLocation.framework */,
@@ -436,6 +440,7 @@
 					"$(inherited)",
 					/Users/Antonio/Downloads,
 					/Users/koyanagi/Downloads,
+					/Users/koyanagi/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "goldenGate/goldenGate-Prefix.pch";
@@ -456,6 +461,7 @@
 					"$(inherited)",
 					/Users/Antonio/Downloads,
 					/Users/koyanagi/Downloads,
+					/Users/koyanagi/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "goldenGate/goldenGate-Prefix.pch";

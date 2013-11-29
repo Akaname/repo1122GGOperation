@@ -11,6 +11,7 @@
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *emailLabel;
 @property (nonatomic, strong) UIButton *myButton;
+@property (nonatomic, strong) UITextField *myTextField;
 @end
 
 @implementation ViewController
@@ -18,6 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // --------- Label ------------
 	CGRect labelFrame = CGRectMake(0.0f, 0.0f, 100.0f, 100.0f);
     self.emailLabel = [[UILabel alloc] initWithFrame:labelFrame];
     //self.emailLabel.numberOfLines = 3;
@@ -36,6 +39,16 @@
     [self.myButton addTarget:self action:@selector(buttonIsPressed:) forControlEvents:UIControlEventTouchDown];
     [self.myButton addTarget:self action:@selector(buttonIsTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.myButton];
+    
+    // ---------- Text fields ----------
+    CGRect textFieldFrame = CGRectMake(0.0f, 0.0f, 200.0f, 31.0f);
+    self.myTextField = [[UITextField alloc] initWithFrame:textFieldFrame];
+    self.myTextField.borderStyle = UITextBorderStyleRoundedRect;
+    self.myTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    self.myTextField.textAlignment = NSTextAlignmentCenter;
+    self.myTextField.text = @"insert email";
+    self.myTextField.center = self.view.center;
+    [self.view addSubview:self.myTextField];
 }
 
 - (void)didReceiveMemoryWarning
