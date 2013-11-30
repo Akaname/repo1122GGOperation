@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (strong, nonatomic) IBOutlet UITextField *emailTextField;
 @property (strong, nonatomic) Person * person;
+
 @end
 
 @implementation ViewController
@@ -25,7 +26,7 @@
 - (void)viewDidLoad
 {
     NSLog(@"TOPO");
-    _person = [_person init];
+    self.person = [[Person alloc] init];
     NSLog(@"GIGIO");
     
     [super viewDidLoad];

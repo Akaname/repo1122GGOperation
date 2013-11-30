@@ -8,7 +8,7 @@
 
 #import <Parse/Parse.h>
 
-@interface Person : PFObject
+@interface Person : NSObject
 @property (nonatomic, strong) PFUser * person;
 
 
