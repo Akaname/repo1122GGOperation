@@ -9,15 +9,18 @@
 #import "Person.h"
 
 @implementation Person
-@synthesize person;
+@synthesize user;
 
 - (void) initPFUser:(NSString *)username withPassword:(NSString *)password withEmail:(NSString *)email{
-    PFUser *user = [PFUser user];
+    user = [PFUser user];
     
     user.username = username;
     user.password = password;
     user.email = email;
     
     NSLog(@"Person: %@ \n Username: %@ \n Email: %@", user.username, user.password, user.email);
+    
+    
+    
 }
 @end

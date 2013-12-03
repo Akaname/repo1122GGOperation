@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9424DF5184E3D1E00919CF3 /* Comms.m in Sources */ = {isa = PBXBuildFile; fileRef = A9424DF4184E3D1E00919CF3 /* Comms.m */; };
+		A9424DF9184E407800919CF3 /* LoginPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9424DF7184E407800919CF3 /* LoginPageViewController.m */; };
 		A95F4910184816F7003A314C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95F490F184816F7003A314C /* Foundation.framework */; };
 		A95F4912184816F7003A314C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95F4911184816F7003A314C /* CoreGraphics.framework */; };
 		A95F4914184816F7003A314C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95F4913184816F7003A314C /* UIKit.framework */; };
@@ -48,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A9424DF3184E3D1E00919CF3 /* Comms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comms.h; sourceTree = "<group>"; };
+		A9424DF4184E3D1E00919CF3 /* Comms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comms.m; sourceTree = "<group>"; };
+		A9424DF6184E407800919CF3 /* LoginPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPageViewController.h; sourceTree = "<group>"; };
+		A9424DF7184E407800919CF3 /* LoginPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPageViewController.m; sourceTree = "<group>"; };
 		A95F490C184816F7003A314C /* goldenGate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goldenGate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95F490F184816F7003A314C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A95F4911184816F7003A314C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -167,10 +173,9 @@
 			children = (
 				A95F491E184816F7003A314C /* AppDelegate.h */,
 				A95F491F184816F7003A314C /* AppDelegate.m */,
-				A95F4921184816F7003A314C /* Main_iPhone.storyboard */,
-				A95F4924184816F7003A314C /* Main_iPad.storyboard */,
-				A95F4927184816F7003A314C /* ViewController.h */,
-				A95F4928184816F7003A314C /* ViewController.m */,
+				A9BAD4A4184E478600D9196C /* View Controllers */,
+				A9424DF3184E3D1E00919CF3 /* Comms.h */,
+				A9424DF4184E3D1E00919CF3 /* Comms.m */,
 				A95F492A184816F7003A314C /* Images.xcassets */,
 				A95F4916184816F7003A314C /* Supporting Files */,
 				A9A416ED1849BB3A00B2A431 /* Person.h */,
@@ -206,6 +211,19 @@
 				A95F493A184816F7003A314C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9BAD4A4184E478600D9196C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A95F4921184816F7003A314C /* Main_iPhone.storyboard */,
+				A9424DF6184E407800919CF3 /* LoginPageViewController.h */,
+				A9424DF7184E407800919CF3 /* LoginPageViewController.m */,
+				A95F4924184816F7003A314C /* Main_iPad.storyboard */,
+				A95F4927184816F7003A314C /* ViewController.h */,
+				A95F4928184816F7003A314C /* ViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +327,9 @@
 				A95F4929184816F7003A314C /* ViewController.m in Sources */,
 				A95F4920184816F7003A314C /* AppDelegate.m in Sources */,
 				A9A416EF1849BB3A00B2A431 /* Person.m in Sources */,
+				A9424DF5184E3D1E00919CF3 /* Comms.m in Sources */,
 				A95F491C184816F7003A314C /* main.m in Sources */,
+				A9424DF9184E407800919CF3 /* LoginPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,8 @@
 
 #import <Parse/Parse.h>
 
-@interface Person : NSObject
-@property (nonatomic, strong) PFUser * person;
+@interface Person : NSObject    
+@property (nonatomic, strong) PFUser * user;
 
 
 - (void) initPFUser:(NSString *)username withPassword:(NSString *)password withEmail:(NSString *)email;
