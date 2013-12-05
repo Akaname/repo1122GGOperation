@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A92296D91850809800EEB4EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92296D81850809800EEB4EB /* Images.xcassets */; };
+		A92296DC185087FE00EEB4EB /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92296DB185087FE00EEB4EB /* SignUpViewController.m */; };
 		A9424DF5184E3D1E00919CF3 /* Comms.m in Sources */ = {isa = PBXBuildFile; fileRef = A9424DF4184E3D1E00919CF3 /* Comms.m */; };
 		A9424DF9184E407800919CF3 /* LoginPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9424DF7184E407800919CF3 /* LoginPageViewController.m */; };
+		A9511F0318505D9400D50E96 /* ProfilePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9511F0218505D9400D50E96 /* ProfilePageViewController.m */; };
+		A9511F0618505DBD00D50E96 /* WallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9511F0518505DBD00D50E96 /* WallViewController.m */; };
+		A9511F091850696A00D50E96 /* ProfileConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9511F081850696A00D50E96 /* ProfileConfigurationViewController.m */; };
 		A95F4910184816F7003A314C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95F490F184816F7003A314C /* Foundation.framework */; };
 		A95F4912184816F7003A314C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95F4911184816F7003A314C /* CoreGraphics.framework */; };
 		A95F4914184816F7003A314C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95F4913184816F7003A314C /* UIKit.framework */; };
@@ -17,8 +22,6 @@
 		A95F4920184816F7003A314C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A95F491F184816F7003A314C /* AppDelegate.m */; };
 		A95F4923184816F7003A314C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95F4921184816F7003A314C /* Main_iPhone.storyboard */; };
 		A95F4926184816F7003A314C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95F4924184816F7003A314C /* Main_iPad.storyboard */; };
-		A95F4929184816F7003A314C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A95F4928184816F7003A314C /* ViewController.m */; };
-		A95F492B184816F7003A314C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95F492A184816F7003A314C /* Images.xcassets */; };
 		A95F4932184816F7003A314C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95F4931184816F7003A314C /* XCTest.framework */; };
 		A95F4933184816F7003A314C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95F490F184816F7003A314C /* Foundation.framework */; };
 		A95F4934184816F7003A314C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95F4913184816F7003A314C /* UIKit.framework */; };
@@ -50,10 +53,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A92296D81850809800EEB4EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A92296DA185087FE00EEB4EB /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		A92296DB185087FE00EEB4EB /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		A9424DF3184E3D1E00919CF3 /* Comms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comms.h; sourceTree = "<group>"; };
 		A9424DF4184E3D1E00919CF3 /* Comms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comms.m; sourceTree = "<group>"; };
 		A9424DF6184E407800919CF3 /* LoginPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPageViewController.h; sourceTree = "<group>"; };
 		A9424DF7184E407800919CF3 /* LoginPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPageViewController.m; sourceTree = "<group>"; };
+		A9511F0118505D9400D50E96 /* ProfilePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilePageViewController.h; sourceTree = "<group>"; };
+		A9511F0218505D9400D50E96 /* ProfilePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilePageViewController.m; sourceTree = "<group>"; };
+		A9511F0418505DBD00D50E96 /* WallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallViewController.h; sourceTree = "<group>"; };
+		A9511F0518505DBD00D50E96 /* WallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallViewController.m; sourceTree = "<group>"; };
+		A9511F071850696A00D50E96 /* ProfileConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileConfigurationViewController.h; sourceTree = "<group>"; };
+		A9511F081850696A00D50E96 /* ProfileConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileConfigurationViewController.m; sourceTree = "<group>"; };
 		A95F490C184816F7003A314C /* goldenGate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goldenGate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95F490F184816F7003A314C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A95F4911184816F7003A314C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,9 +78,6 @@
 		A95F491F184816F7003A314C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A95F4922184816F7003A314C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		A95F4925184816F7003A314C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		A95F4927184816F7003A314C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A95F4928184816F7003A314C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A95F492A184816F7003A314C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A95F4930184816F7003A314C /* goldenGateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goldenGateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95F4931184816F7003A314C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A95F4939184816F7003A314C /* goldenGateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "goldenGateTests-Info.plist"; sourceTree = "<group>"; };
@@ -176,7 +185,7 @@
 				A9BAD4A4184E478600D9196C /* View Controllers */,
 				A9424DF3184E3D1E00919CF3 /* Comms.h */,
 				A9424DF4184E3D1E00919CF3 /* Comms.m */,
-				A95F492A184816F7003A314C /* Images.xcassets */,
+				A92296D81850809800EEB4EB /* Images.xcassets */,
 				A95F4916184816F7003A314C /* Supporting Files */,
 				A9A416ED1849BB3A00B2A431 /* Person.h */,
 				A9A416EE1849BB3A00B2A431 /* Person.m */,
@@ -217,11 +226,17 @@
 			isa = PBXGroup;
 			children = (
 				A95F4921184816F7003A314C /* Main_iPhone.storyboard */,
+				A92296DA185087FE00EEB4EB /* SignUpViewController.h */,
+				A92296DB185087FE00EEB4EB /* SignUpViewController.m */,
+				A9511F071850696A00D50E96 /* ProfileConfigurationViewController.h */,
+				A9511F081850696A00D50E96 /* ProfileConfigurationViewController.m */,
+				A9511F0118505D9400D50E96 /* ProfilePageViewController.h */,
+				A9511F0218505D9400D50E96 /* ProfilePageViewController.m */,
+				A9511F0418505DBD00D50E96 /* WallViewController.h */,
+				A9511F0518505DBD00D50E96 /* WallViewController.m */,
 				A9424DF6184E407800919CF3 /* LoginPageViewController.h */,
 				A9424DF7184E407800919CF3 /* LoginPageViewController.m */,
 				A95F4924184816F7003A314C /* Main_iPad.storyboard */,
-				A95F4927184816F7003A314C /* ViewController.h */,
-				A95F4928184816F7003A314C /* ViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -303,7 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A95F4926184816F7003A314C /* Main_iPad.storyboard in Resources */,
-				A95F492B184816F7003A314C /* Images.xcassets in Resources */,
+				A92296D91850809800EEB4EB /* Images.xcassets in Resources */,
 				A95F4923184816F7003A314C /* Main_iPhone.storyboard in Resources */,
 				A95F491A184816F7003A314C /* InfoPlist.strings in Resources */,
 			);
@@ -324,12 +339,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A95F4929184816F7003A314C /* ViewController.m in Sources */,
 				A95F4920184816F7003A314C /* AppDelegate.m in Sources */,
 				A9A416EF1849BB3A00B2A431 /* Person.m in Sources */,
+				A9511F0318505D9400D50E96 /* ProfilePageViewController.m in Sources */,
 				A9424DF5184E3D1E00919CF3 /* Comms.m in Sources */,
+				A9511F091850696A00D50E96 /* ProfileConfigurationViewController.m in Sources */,
 				A95F491C184816F7003A314C /* main.m in Sources */,
+				A9511F0618505DBD00D50E96 /* WallViewController.m in Sources */,
 				A9424DF9184E407800919CF3 /* LoginPageViewController.m in Sources */,
+				A92296DC185087FE00EEB4EB /* SignUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

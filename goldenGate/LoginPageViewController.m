@@ -8,8 +8,9 @@
 
 #import "LoginPageViewController.h"
 
-@interface LoginPageViewController ()
+@interface LoginPageViewController () <CommsDelegate>
 @property (strong, nonatomic) IBOutlet UIButton *fbLoginButton;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *progressIndicator;
 
 @end
 
@@ -29,6 +30,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.fbLoginButton addTarget:self action:@selector(isPressed:) forControlEvents:UIControlEventTouchDown];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,6 +39,21 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)isPressed:(id)sender {
+    [self.fbLoginButton setEnabled:NO];
+    [self.progressIndicator startAnimating];
+    [Comms login:self];
 }
 
+- (void) commsDidLogin:(BOOL)loggedIn {
+    [self.fbLoginButton setEnabled:YES];
+    [self.progressIndicator stopAnimating];
+    if (loggedIn) {
+        
+        //[self performSegueWithIdentifier:<#(NSString *)#> sender:<#(id)#>];
+    }
+}
+
++ (void) getUserInstance:(PFUser *)userInstance {
+    //self.user=userInstance;
+}
 @end

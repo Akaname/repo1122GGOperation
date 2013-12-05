@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LoginPageViewController : UIViewController
-
+@property (strong, nonatomic) PFUser *user;
 @end
