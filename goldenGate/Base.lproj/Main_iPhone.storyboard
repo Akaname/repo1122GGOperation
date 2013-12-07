@@ -127,6 +127,7 @@
                         <outlet property="fbLoginButton" destination="rWE-8x-fo3" id="F9z-9w-zqj"/>
                         <segue destination="5ob-ed-s5Y" kind="push" id="1AE-S8-rdE"/>
                         <segue destination="qIN-8Y-u6y" kind="push" id="R8O-6n-qjK"/>
+                        <segue destination="ShG-dz-ZN7" kind="push" identifier="loadProfilePageTest" id="ZuN-jM-9Zr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWv-pM-Gu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -166,9 +167,26 @@
                     <view key="view" contentMode="scaleToFill" id="6Y9-Ut-nGc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oU-Mz-32V">
+                                <rect key="frame" x="105" y="108" width="210" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wfV-bd-pal" customClass="FBProfilePicture">
+                                <rect key="frame" x="20" y="108" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="hbK-7M-jff"/>
+                    <connections>
+                        <outlet property="profilePicture" destination="wfV-bd-pal" id="pPq-7Z-w0n"/>
+                        <outlet property="userNameLabel" destination="3oU-Mz-32V" id="Kv2-RP-RhH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OwN-th-bx0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -203,4 +221,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZuN-jM-9Zr"/>
+    </inferredMetricsTieBreakers>
 </document>

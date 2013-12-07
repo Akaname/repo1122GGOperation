@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Person.h"
 
 @interface LoginPageViewController : UIViewController
-@property (strong, nonatomic) PFUser *user;
+@property (strong, nonatomic) Person *user;
 @end

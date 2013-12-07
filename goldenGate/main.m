@@ -13,7 +13,6 @@
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        NSLog(@"DIOOOOOOOO");
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

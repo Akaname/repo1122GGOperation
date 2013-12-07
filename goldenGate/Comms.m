@@ -11,9 +11,10 @@
 @implementation Comms
 + (void) login:(id<CommsDelegate>)delegate
 {
-	
+	NSLog(@"1");
 	[PFFacebookUtils logInWithPermissions:nil block:^(PFUser *user, NSError *error) {
 		// Was login successful ?
+        NSLog(@"2");
 		if (!user) {
 			if (!error) {
                 NSLog(@"The user cancelled the Facebook login.");

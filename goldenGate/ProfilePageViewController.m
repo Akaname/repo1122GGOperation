@@ -7,8 +7,11 @@
 //
 
 #import "ProfilePageViewController.h"
+#import "FBProfilePicture.h"
 
 @interface ProfilePageViewController ()
+@property (strong, nonatomic) IBOutlet FBProfilePicture *profilePicture;
+@property (strong, nonatomic) IBOutlet UILabel *userNameLabel;
 
 @end
 
@@ -27,12 +30,26 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+}
+
+- (void) populateUserDetails
+{
+    if (FBSession.activeSession.isOpen) {
+        [[FBRequest requestForMe] startWithCompletionHandler:^(FBRequestConnection *connection, NSDictionary<FBGraphUser> *user, NSError *error) {
+            if (!error) {
+                self.userNameLabel.text = user.name;
+
+            }
+        }];
+    }
 }
 
 @end
