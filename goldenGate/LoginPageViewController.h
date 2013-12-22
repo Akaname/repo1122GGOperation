@@ -10,5 +10,5 @@
 #import "Person.h"
 
 @interface LoginPageViewController : UIViewController
-@property (strong, nonatomic) Person *user;
+
 @end

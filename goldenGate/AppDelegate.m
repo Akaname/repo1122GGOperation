@@ -17,6 +17,7 @@
     [Parse setApplicationId:@"YuDW2lj8rDzUoFt0NtoLMvGnUU0KNK7inF5U64IW"
                   clientKey:@"39rkz5n59eKYyjjCIgBLKIaOHBd20GSwnsTgMLv4"];
     [PFFacebookUtils initializeFacebook];
+
     return YES;
 }
 

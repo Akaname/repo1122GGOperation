@@ -7,11 +7,14 @@
 //
 
 #import "ProfilePageViewController.h"
-#import "FBProfilePicture.h"
 
-@interface ProfilePageViewController ()
-@property (strong, nonatomic) IBOutlet FBProfilePicture *profilePicture;
+
+@interface ProfilePageViewController () <NSURLConnectionDelegate>
+
 @property (strong, nonatomic) IBOutlet UILabel *userNameLabel;
+@property (strong, nonatomic) Person * person;
+@property (strong, nonatomic) IBOutlet FBProfilePictureView *profilePicture;
+
 
 @end
 
@@ -30,7 +33,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
+    self.person=[[Person alloc]init];
+    [self populateUserDetails];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,14 +46,32 @@
 
 - (void) populateUserDetails
 {
+    NSLog(@"Session open?");
     if (FBSession.activeSession.isOpen) {
+        NSLog(@"YES");
         [[FBRequest requestForMe] startWithCompletionHandler:^(FBRequestConnection *connection, NSDictionary<FBGraphUser> *user, NSError *error) {
             if (!error) {
-                self.userNameLabel.text = user.name;
-
+                self.userNameLabel.text = user.first_name;
+                self.person.personId = user.id;
+                self.profilePicture.profileID=self.person.personId;
+                NSLog(@"%@", self.person.personId);
             }
         }];
+        
+        //self.profilePicture.profileID=self.person.personId;
+//        NSURL *profileURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", self.person.personId]];
+//        NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:profileURL cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:2.0f];
+//        NSURLConnection *urlConnection = [[NSURLConnection alloc]initWithRequest:urlRequest delegate:self];
+        
     }
+}
+
+- (void) connection:(NSURLConnection *) connection didReceiveData:(NSData *)data {
+
+}
+
+- (void) connectionDidFinishLoading:(NSURLConnection *)connection{
+    
 }
 
 @end

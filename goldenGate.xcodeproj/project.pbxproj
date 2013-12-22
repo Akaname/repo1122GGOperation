@@ -12,7 +12,6 @@
 		A940B15C1850DEDA00701AE9 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A940B15B1850DEDA00701AE9 /* Person.m */; };
 		A9424DF5184E3D1E00919CF3 /* Comms.m in Sources */ = {isa = PBXBuildFile; fileRef = A9424DF4184E3D1E00919CF3 /* Comms.m */; };
 		A9424DF9184E407800919CF3 /* LoginPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9424DF7184E407800919CF3 /* LoginPageViewController.m */; };
-		A94CDC2218524FDD00F7E4B4 /* FBProfilePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CDC2118524FDD00F7E4B4 /* FBProfilePicture.m */; };
 		A9511F0318505D9400D50E96 /* ProfilePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9511F0218505D9400D50E96 /* ProfilePageViewController.m */; };
 		A9511F0618505DBD00D50E96 /* WallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9511F0518505DBD00D50E96 /* WallViewController.m */; };
 		A9511F091850696A00D50E96 /* ProfileConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9511F081850696A00D50E96 /* ProfileConfigurationViewController.m */; };
@@ -41,6 +40,7 @@
 		A97DEE52184A50B600A18729 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97DEE51184A50B600A18729 /* Parse.framework */; };
 		A9A416EC1849A9B800B2A431 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A416EB1849A9B800B2A431 /* FacebookSDK.framework */; };
 		A9A416F11849D33B00B2A431 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A416F01849D33B00B2A431 /* Parse.framework */; };
+		A9E5C2E61866CEA700972D0B /* BetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E5C2E51866CEA700972D0B /* BetListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +63,6 @@
 		A9424DF4184E3D1E00919CF3 /* Comms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comms.m; sourceTree = "<group>"; };
 		A9424DF6184E407800919CF3 /* LoginPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPageViewController.h; sourceTree = "<group>"; };
 		A9424DF7184E407800919CF3 /* LoginPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPageViewController.m; sourceTree = "<group>"; };
-		A94CDC2018524FDD00F7E4B4 /* FBProfilePicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBProfilePicture.h; sourceTree = "<group>"; };
-		A94CDC2118524FDD00F7E4B4 /* FBProfilePicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBProfilePicture.m; sourceTree = "<group>"; };
 		A9511F0118505D9400D50E96 /* ProfilePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilePageViewController.h; sourceTree = "<group>"; };
 		A9511F0218505D9400D50E96 /* ProfilePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilePageViewController.m; sourceTree = "<group>"; };
 		A9511F0418505DBD00D50E96 /* WallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallViewController.h; sourceTree = "<group>"; };
@@ -100,6 +98,8 @@
 		A97DEE51184A50B600A18729 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		A9A416EB1849A9B800B2A431 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Users/Antonio/Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		A9A416F01849D33B00B2A431 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Users/Antonio/Downloads/Parse.framework; sourceTree = "<group>"; };
+		A9E5C2E41866CEA700972D0B /* BetListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BetListViewController.h; path = ../BetListViewController.h; sourceTree = "<group>"; };
+		A9E5C2E51866CEA700972D0B /* BetListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BetListViewController.m; path = ../BetListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,9 +228,9 @@
 		A9BAD4A4184E478600D9196C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A9E5C2E41866CEA700972D0B /* BetListViewController.h */,
+				A9E5C2E51866CEA700972D0B /* BetListViewController.m */,
 				A95F4921184816F7003A314C /* Main_iPhone.storyboard */,
-				A94CDC2018524FDD00F7E4B4 /* FBProfilePicture.h */,
-				A94CDC2118524FDD00F7E4B4 /* FBProfilePicture.m */,
 				A92296DA185087FE00EEB4EB /* SignUpViewController.h */,
 				A92296DB185087FE00EEB4EB /* SignUpViewController.m */,
 				A9511F071850696A00D50E96 /* ProfileConfigurationViewController.h */,
@@ -348,12 +348,12 @@
 				A9511F0318505D9400D50E96 /* ProfilePageViewController.m in Sources */,
 				A9424DF5184E3D1E00919CF3 /* Comms.m in Sources */,
 				A9511F091850696A00D50E96 /* ProfileConfigurationViewController.m in Sources */,
-				A94CDC2218524FDD00F7E4B4 /* FBProfilePicture.m in Sources */,
 				A95F491C184816F7003A314C /* main.m in Sources */,
 				A9511F0618505DBD00D50E96 /* WallViewController.m in Sources */,
 				A940B15C1850DEDA00701AE9 /* Person.m in Sources */,
 				A9424DF9184E407800919CF3 /* LoginPageViewController.m in Sources */,
 				A92296DC185087FE00EEB4EB /* SignUpViewController.m in Sources */,
+				A9E5C2E61866CEA700972D0B /* BetListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +502,7 @@
 				GCC_PREFIX_HEADER = "goldenGate/goldenGate-Prefix.pch";
 				INFOPLIST_FILE = "goldenGate/goldenGate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -525,6 +526,7 @@
 				GCC_PREFIX_HEADER = "goldenGate/goldenGate-Prefix.pch";
 				INFOPLIST_FILE = "goldenGate/goldenGate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;

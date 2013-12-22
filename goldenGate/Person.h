@@ -9,8 +9,9 @@
 #import <Parse/Parse.h>
 
 @interface Person : PFObject <PFSubclassing>
-
-
+@property (nonatomic, strong) NSString * personId;
+@property (nonatomic, strong) NSString * firstName;
+@property (nonatomic, strong) NSString * lastName;
 + (NSString *)parseClassName;
 
 @end

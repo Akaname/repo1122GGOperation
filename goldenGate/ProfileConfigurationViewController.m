@@ -8,7 +8,7 @@
 
 #import "ProfileConfigurationViewController.h"
 
-@interface ProfileConfigurationViewController ()
+@interface ProfileConfigurationViewController () 
 
 @end
 

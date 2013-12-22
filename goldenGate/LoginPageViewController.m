@@ -12,6 +12,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *fbLoginButton;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *progressIndicator;
 @property (strong, nonatomic) Person *person;
+
 @end
 
 @implementation LoginPageViewController
@@ -47,14 +48,19 @@
 - (void) commsDidLogin:(BOOL)loggedIn {
     [self.fbLoginButton setEnabled:YES];
     [self.progressIndicator stopAnimating];
-    NSLog(@"Logged in?");
     if (loggedIn) {
-        NSLog(@"Yes!");
+        [[FBRequest requestForMe] startWithCompletionHandler:^(FBRequestConnection *connection, NSDictionary<FBGraphUser> *user, NSError *error) {
+            
+            self.person.personId = user.id;
+            self.person.firstName = user.first_name;
+            self.person.lastName = user.last_name;
+            
+        }];
         [self performSegueWithIdentifier:@"loadProfilePageTest" sender:self];
     }
 }
 
-- (void) getUserInstance:(PFUser *)userInstance {
-    //self.user=userInstance;
+- (void) getUserInstance:(Person *)userInstance {
+    self.person=userInstance;
 }
 @end
