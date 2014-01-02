@@ -228,22 +228,38 @@
 		A9BAD4A4184E478600D9196C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A9FBBCA6186AB33D00A8C7D1 /* storyboard */,
 				A9E5C2E41866CEA700972D0B /* BetListViewController.h */,
 				A9E5C2E51866CEA700972D0B /* BetListViewController.m */,
-				A95F4921184816F7003A314C /* Main_iPhone.storyboard */,
-				A92296DA185087FE00EEB4EB /* SignUpViewController.h */,
-				A92296DB185087FE00EEB4EB /* SignUpViewController.m */,
-				A9511F071850696A00D50E96 /* ProfileConfigurationViewController.h */,
-				A9511F081850696A00D50E96 /* ProfileConfigurationViewController.m */,
 				A9511F0118505D9400D50E96 /* ProfilePageViewController.h */,
 				A9511F0218505D9400D50E96 /* ProfilePageViewController.m */,
 				A9511F0418505DBD00D50E96 /* WallViewController.h */,
 				A9511F0518505DBD00D50E96 /* WallViewController.m */,
-				A9424DF6184E407800919CF3 /* LoginPageViewController.h */,
-				A9424DF7184E407800919CF3 /* LoginPageViewController.m */,
-				A95F4924184816F7003A314C /* Main_iPad.storyboard */,
+				A9FBBCA5186AB1EA00A8C7D1 /* Login and Sign Up */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A9FBBCA5186AB1EA00A8C7D1 /* Login and Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				A9511F071850696A00D50E96 /* ProfileConfigurationViewController.h */,
+				A9511F081850696A00D50E96 /* ProfileConfigurationViewController.m */,
+				A92296DA185087FE00EEB4EB /* SignUpViewController.h */,
+				A92296DB185087FE00EEB4EB /* SignUpViewController.m */,
+				A9424DF6184E407800919CF3 /* LoginPageViewController.h */,
+				A9424DF7184E407800919CF3 /* LoginPageViewController.m */,
+			);
+			name = "Login and Sign Up";
+			sourceTree = "<group>";
+		};
+		A9FBBCA6186AB33D00A8C7D1 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A95F4924184816F7003A314C /* Main_iPad.storyboard */,
+				A95F4921184816F7003A314C /* Main_iPhone.storyboard */,
+			);
+			name = storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

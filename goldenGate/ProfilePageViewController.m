@@ -46,14 +46,12 @@
 
 - (void) populateUserDetails
 {
-    NSLog(@"Session open?");
     if (FBSession.activeSession.isOpen) {
-        NSLog(@"YES");
         [[FBRequest requestForMe] startWithCompletionHandler:^(FBRequestConnection *connection, NSDictionary<FBGraphUser> *user, NSError *error) {
             if (!error) {
-                self.userNameLabel.text = user.first_name;
+                self.userNameLabel.text = user.last_name;
                 self.person.personId = user.id;
-                self.profilePicture.profileID=self.person.personId;
+                self.profilePicture.profileID=self.person.personId;             //sets up the profile picture of facebook
                 NSLog(@"%@", self.person.personId);
             }
         }];

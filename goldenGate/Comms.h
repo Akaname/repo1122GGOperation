@@ -15,5 +15,6 @@
 
 
 @interface Comms : NSObject
-+(void) login:(id<CommsDelegate>)delegate;
++(void) fbLogin:(id<CommsDelegate>)delegate;
++(void) twLogin;
 @end

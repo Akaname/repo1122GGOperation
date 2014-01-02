@@ -9,7 +9,7 @@
 #import "Comms.h"
 
 @implementation Comms
-+ (void) login:(id<CommsDelegate>)delegate
++ (void) fbLogin:(id<CommsDelegate>)delegate
 {
 	[PFFacebookUtils logInWithPermissions:nil block:^(PFUser *user, NSError *error) {
 		// Was login successful ?
@@ -38,5 +38,20 @@
 			}
 		}
 	}];
+}
+
++ (void) twLogin{
+    [PFTwitterUtils logInWithBlock:^(PFUser *user, NSError *error) {
+        if (!user) {
+            NSLog(@"The user cancelled the twitter login");
+            return;
+        }
+        else if (user.isNew){
+            NSLog(@"user signed up and logged in with Twitter");
+        }
+        else {
+            NSLog(@"user logged in with twitter");
+        }
+    }];
 }
 @end

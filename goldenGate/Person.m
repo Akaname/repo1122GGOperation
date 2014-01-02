@@ -11,6 +11,10 @@
 
 @implementation Person
 
+@synthesize personId;
+@synthesize firstName;
+@synthesize lastName;
+
 +(NSString *)parseClassName {
     return @"Person";
 }

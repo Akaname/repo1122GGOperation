@@ -9,10 +9,12 @@
 #import "LoginPageViewController.h"
 
 @interface LoginPageViewController () <CommsDelegate>
+@property (strong, nonatomic) IBOutlet UIButton *signInButton;
+@property (strong, nonatomic) IBOutlet UIButton *registerButton;
 @property (strong, nonatomic) IBOutlet UIButton *fbLoginButton;
+@property (strong, nonatomic) IBOutlet UIButton *twLoginButton;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *progressIndicator;
 @property (strong, nonatomic) Person *person;
-
 @end
 
 @implementation LoginPageViewController
@@ -30,8 +32,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self.fbLoginButton addTarget:self action:@selector(isPressed:) forControlEvents:UIControlEventTouchDown];
+    [self.fbLoginButton addTarget:self action:@selector(fbIsPressed:) forControlEvents:UIControlEventTouchDown];
+    [self.twLoginButton addTarget:self action:@selector(twIsPressed:) forControlEvents:UIControlEventTouchDown];
     
+    [self.registerButton.layer setBorderWidth:1.0];
+    [self.registerButton.layer setBorderColor:[[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0] CGColor]];
+    self.registerButton.layer.cornerRadius=10;
+    
+    [self.signInButton.layer setBorderWidth:1.0];
+    [self.signInButton.layer setBorderColor:[[UIColor redColor] CGColor]];
+    self.signInButton.layer.cornerRadius=10;
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,10 +49,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)isPressed:(id)sender {
+- (IBAction)fbIsPressed:(id)sender {
     [self.fbLoginButton setEnabled:NO];
     [self.progressIndicator startAnimating];
-    [Comms login:self];
+    [Comms fbLogin:self];
+}
+
+- (IBAction)twIsPressed:(id)sender {
+    [self.twLoginButton setEnabled:NO];
+    [self.progressIndicator startAnimating];
+    [Comms twLogin];
+    //LOGIN
 }
 
 - (void) commsDidLogin:(BOOL)loggedIn {

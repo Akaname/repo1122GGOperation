@@ -76,7 +76,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rWE-8x-fo3">
-                                <rect key="frame" x="55" y="321" width="211" height="53"/>
+                                <rect key="frame" x="55" y="340" width="211" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="fblogin">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -95,7 +95,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IZe-qm-4le">
-                                <rect key="frame" x="91" y="269" width="145" height="30"/>
+                                <rect key="frame" x="118" y="302" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -111,12 +111,23 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SCS-xd-9yx">
+                                <rect key="frame" x="118" y="252" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="QUF-RR-UH3"/>
                     <connections>
                         <outlet property="fbLoginButton" destination="rWE-8x-fo3" id="F9z-9w-zqj"/>
+                        <outlet property="registerButton" destination="IZe-qm-4le" id="Nza-Qc-shC"/>
+                        <outlet property="signInButton" destination="SCS-xd-9yx" id="ggf-Lu-ekj"/>
+                        <outlet property="twLoginButton" destination="4us-79-U1k" id="9AQ-1j-1V9"/>
                         <segue destination="5ob-ed-s5Y" kind="push" id="1AE-S8-rdE"/>
                         <segue destination="qIN-8Y-u6y" kind="push" id="R8O-6n-qjK"/>
                         <segue destination="ShG-dz-ZN7" kind="push" identifier="loadProfilePageTest" id="ZuN-jM-9Zr"/>
@@ -234,7 +245,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="s1x-TH-c3U"/>
+        <segue reference="ZuN-jM-9Zr"/>
         <segue reference="6QP-su-SRr"/>
     </inferredMetricsTieBreakers>
 </document>
